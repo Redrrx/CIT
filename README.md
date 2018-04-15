@@ -55,21 +55,21 @@ persist-tun
 client
 verb 3
 ```
-# Download and usage 
+# Download and usage.
 **CLOSE ALL GAMES BEFORE STARTING CIT !**
 
 [DOWNLOAD](https://github.com/Redrrx/CIT/releases/download/EXP-V2/binaries-exp-v2.zip) extract and double click on CIT.exe and there you go launch your game and start yelling.
 
 
-# Known issues
-"Nothing works its bullshit"
+# Known issues.
+**"Nothing works its bullshit"**
 check your permissions, CIT requires full admin privileges as its interacting with your system firewall and drivers installation
-"the voice chat suddenly stops working"
+**"the voice chat suddenly stops working"**
 this is related to your connectivity to the VPN i can't help with that.
-"the voice lags"
+**"the voice lags"**
 well the voice chat bitrate is less than 64kb this is your net or the vpn nothing with the software. 
 
-# The To-Do list
+# The To-Do list.
 
 - [x] Make Tom clancy's rainbow six siege voice chat work.
 - [X] Tweak few stability things.
