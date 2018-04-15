@@ -58,8 +58,9 @@ verb 3
 
 # The To-Do list
 
-- [x] Make Tom clancy's rainbow six siege voice chat work
-- [X] Tweak few stability things
-- [ ] find a better vpn solutions
-- [ ] add overwatch voip bypass
-- [ ] Make a Console version ps4/xb1
+- [x] Make Tom clancy's rainbow six siege voice chat work.
+- [X] Tweak few stability things.
+- [ ] find a better vpn solutions.
+- [ ] add H1Z1 voip bypass.
+- [ ] add overwatch voip bypass.
+- [ ] Make a Console version ps4/xb1.
