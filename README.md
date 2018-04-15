@@ -39,6 +39,8 @@ head over to /vpn/data/config/ you will find server.ovpn feel free to replace it
 
 not to forget that your openvpn server needs to accept routing configurations and doesn't force the entire gateway plus being hosted in a French or German IP.
 
+Check for free and public Openvpn servers at http://vpngate.net don't forget to look for france and germany only.
+
 ```
 tap-sleep 3
 route-delay 1 3
@@ -62,11 +64,11 @@ verb 3
 
 
 # Known issues.
-**"Nothing works its bullshit"**
+**"Nothing works its bullshit"**.
 check your permissions, CIT requires full admin privileges as its interacting with your system firewall and drivers installation
-**"the voice chat suddenly stops working"**
+**"the voice chat suddenly stops working"**.
 this is related to your connectivity to the VPN i can't help with that.
-**"the voice lags"**
+**"the voice lags"**.
 well the voice chat bitrate is less than 64kb this is your net or the vpn nothing with the software. 
 
 # The To-Do list.
