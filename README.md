@@ -64,11 +64,11 @@ verb 3
 
 
 # Known issues.
-**"Nothing works its bullshit"**.
-check your permissions, CIT requires full admin privileges as its interacting with your system firewall and drivers installation
-**"the voice chat suddenly stops working"**.
+- **"Nothing works its bullshit"**
+check your permissions, CIT requires full admin privileges.
+- **"the voice chat suddenly stops working"**
 this is related to your connectivity to the VPN i can't help with that.
-**"the voice lags"**.
+- **"the voice lags"**
 well the voice chat bitrate is less than 64kb this is your net or the vpn nothing with the software. 
 
 # The To-Do list.
