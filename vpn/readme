@@ -1,0 +1,2 @@
+This is the openvpn portable directory, its already configured to run with once click.
+the file is inside the config folder named server.ovpn it is not recommanded to change it without giving the new one extra additions such as routes and auth ignore.
