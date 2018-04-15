@@ -75,6 +75,7 @@ well the voice chat bitrate is less than 64kb this is your net or the vpn nothin
 
 - [x] Make Tom clancy's rainbow six siege voice chat work.
 - [X] Tweak few stability things.
+- [X] PUBG voice chat EU/AS/SA
 - [ ] Clean that Junk code..
 - [ ] find a better vpn solution.
 - [ ] add H1Z1 voip bypass.
