@@ -1,4 +1,6 @@
-by isolating the voice chat relay to a vpn connection without affecting the in-game performance and latency, keep in mind that results may vary from machine to machine due numerous factors such as network stability and the total connections being made to the vpn.
+# Introduction
+CIT for "Can I Talk"is a dummy solution to bypass video game voip restrictions, by isolating the voice chat relay to a vpn connection without affecting the in-game performance and latency, keep in mind that results may vary from machine to machine due numerous factors such as network stability and the total connections being made to the vpn, the current version is experimental and not complete.
+
 
 This software is targeted for a specific audience which is any resident from the following countries:
 
@@ -53,4 +55,9 @@ client
 verb 3
 ```
 
+# The TO-DO List
 
+- [x] Make Tom clancy's rainbow six siege voice chat work
+- [X] Tweak few stability things
+- [ ] find a better vpn solutions
+- [ ] Make Console version
