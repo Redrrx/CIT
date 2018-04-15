@@ -37,6 +37,7 @@ the current version of CIT only works with Tom clancy's Rainbow six siege Player
 # Using your own/another Openvpn server.
 head over to /vpn/data/config/ you will find server.ovpn feel free to replace it but don't forget to add those additional configurations otherwise you won't isolate the voice chat servers to the vpn connection. 
 
+not to forget that your openvpn server needs to accept routing configurations and doesn't force the entire gateway
 
 ```
 tap-sleep 3
