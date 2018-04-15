@@ -1,0 +1,91 @@
+Thu Apr 12 13:20:42 2018 OpenVPN 2.2.2 Win32-MSVC++ [SSL] [LZO2] [PKCS11] built on Dec 15 2011
+Thu Apr 12 13:20:42 2018 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+Thu Apr 12 13:20:42 2018 NOTE: OpenVPN 2.1 requires '--script-security 2' or higher to call user-defined scripts or executables
+Thu Apr 12 13:20:42 2018 Control Channel MTU parms [ L:1557 D:138 EF:38 EB:0 ET:0 EL:0 ]
+Thu Apr 12 13:20:42 2018 Socket Buffers: R=[65536->65536] S=[65536->65536]
+Thu Apr 12 13:20:43 2018 Data Channel MTU parms [ L:1557 D:1450 EF:57 EB:4 ET:0 EL:0 ]
+Thu Apr 12 13:20:43 2018 Local Options hash (VER=V4): '8326dbaa'
+Thu Apr 12 13:20:43 2018 Expected Remote Options hash (VER=V4): 'b7f67de4'
+Thu Apr 12 13:20:43 2018 UDPv4 link local: [undef]
+Thu Apr 12 13:20:43 2018 UDPv4 link remote: 74.208.111.92:1194
+Thu Apr 12 13:20:43 2018 TLS: Initial packet from 74.208.111.92:1194, sid=7dde6863 77452c4c
+Thu Apr 12 13:20:43 2018 VERIFY OK: depth=2, /C=GB/ST=Greater_Manchester/L=Salford/O=COMODO_CA_Limited/CN=COMODO_RSA_Certification_Authority
+Thu Apr 12 13:20:43 2018 VERIFY OK: depth=1, /C=GB/ST=Greater_Manchester/L=Salford/O=COMODO_CA_Limited/CN=COMODO_RSA_Domain_Validation_Secure_Server_CA
+Thu Apr 12 13:20:43 2018 VERIFY OK: depth=0, /OU=Domain_Control_Validated/OU=PositiveSSL_Wildcard/CN=_.opengw.net
+Thu Apr 12 13:20:44 2018 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Thu Apr 12 13:20:44 2018 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Apr 12 13:20:44 2018 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Thu Apr 12 13:20:44 2018 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Thu Apr 12 13:20:44 2018 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Thu Apr 12 13:20:44 2018 [_.opengw.net] Peer Connection Initiated with 74.208.111.92:1194
+Thu Apr 12 13:20:46 2018 SENT CONTROL [_.opengw.net]: 'PUSH_REQUEST' (status=1)
+Thu Apr 12 13:20:51 2018 SENT CONTROL [_.opengw.net]: 'PUSH_REQUEST' (status=1)
+Thu Apr 12 13:20:51 2018 PUSH: Received control message: 'PUSH_REPLY,ping 3,ping-restart 10,ifconfig 10.211.1.133 10.211.1.134,dhcp-option DNS 10.211.254.254,dhcp-option DNS 8.8.8.8,route-gateway 10.211.1.134,redirect-gateway def1'
+Thu Apr 12 13:20:51 2018 Options error: option 'redirect-gateway' cannot be used in this context
+Thu Apr 12 13:20:51 2018 OPTIONS IMPORT: timers and/or timeouts modified
+Thu Apr 12 13:20:51 2018 OPTIONS IMPORT: --ifconfig/up options modified
+Thu Apr 12 13:20:51 2018 OPTIONS IMPORT: route-related options modified
+Thu Apr 12 13:20:51 2018 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Thu Apr 12 13:20:51 2018 ROUTE default_gateway=192.168.1.1
+Thu Apr 12 13:20:51 2018 RESOLVE: NOTE: api.ipify.org resolves to 6 addresses
+Thu Apr 12 13:20:51 2018 TAP-WIN32 device [Ethernet 4] opened: \\.\Global\{1CC6F599-E302-48D3-8D16-F177FB3B4714}.tap
+Thu Apr 12 13:20:51 2018 TAP-Win32 Driver Version 9.21 
+Thu Apr 12 13:20:51 2018 TAP-Win32 MTU=1500
+Thu Apr 12 13:20:51 2018 Notified TAP-Win32 driver to set a DHCP IP/netmask of 10.211.1.133/255.255.255.252 on interface {1CC6F599-E302-48D3-8D16-F177FB3B4714} [DHCP-serv: 10.211.1.134, lease-time: 31536000]
+Thu Apr 12 13:20:51 2018 Sleeping for 3 seconds...
+Thu Apr 12 13:20:54 2018 Successful ARP Flush on interface [7] {1CC6F599-E302-48D3-8D16-F177FB3B4714}
+Thu Apr 12 13:20:55 2018 TEST ROUTES: 10/10 succeeded len=10 ret=1 a=0 u/d=up
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 18.0.0.0 MASK 255.0.0.0 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 74.201.99.240 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 70.42.196.184 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 169.45.201.128 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 54.243.136.64 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 23.23.170.235 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 184.73.209.86 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 50.19.222.19 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 184.72.249.110 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 C:\WINDOWS\system32\route.exe ADD 54.221.221.65 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:20:55 2018 ROUTE: CreateIpForwardEntry succeeded with dwForwardMetric1=35 and dwForwardType=4
+Thu Apr 12 13:20:55 2018 Route addition via IPAPI succeeded [adaptive]
+Thu Apr 12 13:20:55 2018 Initialization Sequence Completed
+Thu Apr 12 13:23:16 2018 TCP/UDP: Closing socket
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 54.221.221.65 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 184.72.249.110 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 50.19.222.19 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 184.73.209.86 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 23.23.170.235 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 54.243.136.64 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 169.45.201.128 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 70.42.196.184 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 74.201.99.240 MASK 255.255.255.255 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 C:\WINDOWS\system32\route.exe DELETE 18.0.0.0 MASK 255.0.0.0 10.211.1.134
+Thu Apr 12 13:23:16 2018 Route deletion via IPAPI succeeded [adaptive]
+Thu Apr 12 13:23:16 2018 Closing TUN/TAP interface
+Thu Apr 12 13:23:16 2018 SIGTERM[hard,] received, process exiting
