@@ -59,7 +59,8 @@ verb 3
 ```
 # Download and usage.
 **CLOSE ALL GAMES BEFORE STARTING CIT !**
-
+**And don't forget to disable your firewall it might interfer.**
+**Run as administrator or the routing won't be done.**
 [DOWNLOAD](https://github.com/Redrrx/CIT/releases/download/EXP-V2/binaries-exp-v2.zip) extract and double click on CIT.exe and there you go launch your game and start yelling.
 
 
