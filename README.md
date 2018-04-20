@@ -72,15 +72,19 @@ this is related to your connectivity to the VPN i can't help with that.
 - **"the voice lags"**
 well the voice chat bitrate is less than 64kb this is your net or the vpn nothing with the software. 
 
+# Quick fix for VPN not launching 
+Go to the vpn folder and set openvpn.exe to run as administrator this should fix it, a workaround for the current permissions issues to be fixed later.
+
 # The To-Do list.
 
-- [x] Make Tom clancy's rainbow six siege voice chat work.
+- [x] Tom clancy's rainbow six siege voice chat work.
 - [X] Tweak few stability things.
-- [X] PUBG voice chat EU/AS/SA.
+- [X] PUBG voice chat work EU/AS/SA.
 - [ ] League of legends voice chat fix.
 - [ ] Fortnite voice chat fix.
 - [ ] Clean that Junk code..
 - [ ] find a better vpn solution.
 - [ ] add H1Z1 voip bypass.
 - [ ] add overwatch voip bypass.
+- [ ] fix permissions issues.
 - [ ] Make a Console version ps4/xb1.
