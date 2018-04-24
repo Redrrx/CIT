@@ -34,29 +34,7 @@ the current version of CIT only works with Tom clancy's Rainbow six siege and Pl
 - PlayerUknown Battlegrounds voice chat works Only in EU/AS/SA servers using a France or German IP  it disconnects sometimes for some reasons i beleive its on their side.
 
 
-# Using your own/another Openvpn server.
-head over to /vpn/data/config/ you will find server.ovpn feel free to replace it but don't forget to add those additional configurations otherwise you won't isolate the voice chat servers to the vpn connection. 
 
-not to forget that your openvpn server needs to accept routing configurations and doesn't force the entire gateway plus being hosted in a French or German IP.
-
-Check for free and public Openvpn servers at http://vpngate.net don't forget to look for france and germany only.
-
-```
-tap-sleep 3
-route-delay 1 3
-route-nopull
-route 18.0.0.0 255.0.0.0
-route mpx5j.vivox.com
-route disp-rbswp-5-1.vivox.com
-route 169.45.201.128
-route api.ipify.org
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-client
-verb 3
-```
 # Download and usage.
 - **CLOSE ALL GAMES BEFORE STARTING CIT !**
 - **And don't forget to disable your firewall it might interfer.**
@@ -88,3 +66,27 @@ Go to the vpn folder and set openvpn.exe to run as administrator this should fix
 - [ ] add overwatch voip bypass.
 - [ ] fix permissions issues.
 - [ ] Make a Console version ps4/xb1.
+
+# Using your own/another Openvpn server.
+head over to /vpn/data/config/ you will find server.ovpn feel free to replace it but don't forget to add those additional configurations otherwise you won't isolate the voice chat servers to the vpn connection. 
+
+not to forget that your openvpn server needs to accept routing configurations and doesn't force the entire gateway plus being hosted in a French or German IP.
+
+Check for free and public Openvpn servers at http://vpngate.net don't forget to look for france and germany only.
+
+```
+tap-sleep 3
+route-delay 1 3
+route-nopull
+route 18.0.0.0 255.0.0.0
+route mpx5j.vivox.com
+route disp-rbswp-5-1.vivox.com
+route 169.45.201.128
+route api.ipify.org
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+client
+verb 3
+```
