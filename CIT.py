@@ -6,6 +6,7 @@ from requests import *
 import subprocess
 from art import *
 
+
 #  current CIT directory for possible future use such as using current openvpn client ( version mismatch between server/client)
 #main_dir = os.path.dirname(os.path.realpath('__file__'))
 
@@ -165,9 +166,9 @@ def run_main():
     print("[*]Killing previous OPENVPN sessions in case CIT was restarted")
     #os.system('taskkill /f /im TinyOpenVPNGui >nul 2>&1')
     time.sleep(2)
-    os.system('taskkill /f /im openvpn.exe')
-    os.system('taskkill /f /im openvpn-gui.exe')
-    os.system('taskkill /f /im TinyOpenVPNGui')
+    os.system('taskkill /f /im openvpn.exe >nul 2>&1')
+    os.system('taskkill /f /im openvpn-gui.exe >nul 2>&1')
+    os.system('taskkill /f /im TinyOpenVPNGui >nul 2>&1')
 
     # show the local ip for no reason honestly i did this to check if its using the TAP driver ip
     print("[*]Your current local IP is :" +IP)
@@ -178,8 +179,8 @@ def run_main():
     time.sleep(2)
     os.system(drivers_install)
     print("[*]Doing network stuff")
-    os.system('ipconfig /flushdns')
-    os.system('ipconfig /registerdns')
+    os.system('ipconfig /flushdns >nul 2>&1')
+    os.system('ipconfig /registerdns >nul 2>&1')
     print("[*]Removing previous routes")
     os.system(unroute_master)
     os.system(unroute_pubg)
@@ -213,7 +214,7 @@ def run_main():
     os.system(unroute_fn12)
     os.system(unroute_fn13)
     # basically taking all the vivox servers i was able to find them and route them then isolating them through a vpn connection
-    print("[*]Fixing voice chat masterservers ")
+    print("[*]Fixing voice chat master-servers ")
     os.system(route_vxx1)
     os.system(route_vxx2)
     os.system(route_vxx3)
@@ -237,9 +238,9 @@ def run_main():
     os.system(route_r6s6)
 
     # Im not sure if i can blame them due the number of players but they do have a loadton of voice chat servers so i had to catch an entire ip range /8 around 22K ip
-    print("[*]TESTING EXPERIMENTAL FIX FOR PUBG CHANCE TO WORK 90%")
+    print("[*]TESTING EXPERIMENTAL FIX FOR PUBG")
     os.system(route_pubgx)
-    print("[*]TESTING EXPERIMENTAL FIX FOR FORTNITE CHANCE TO WORK 70%")
+    print("[*]TESTING EXPERIMENTAL FIX FOR FORTNITE")
     os.system(route_fn)
     os.system(route_fn2)
     os.system(route_fn3)
