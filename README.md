@@ -33,6 +33,7 @@ the current version of CIT only works with Tom clancy's Rainbow six siege and Pl
 
 - PlayerUknown Battlegrounds voice chat works Only in EU/AS/SA servers using a France or German IP  it disconnects sometimes for some reasons i beleive its on their side.
 
+- Fornite voice chat works perfectly due all the voice chat servers being included in CIT now.
 
 
 # Download and usage.
@@ -59,12 +60,11 @@ Go to the vpn folder and set openvpn.exe to run as administrator this should fix
 - [X] Tweak few stability things.
 - [X] PUBG voice chat work EU/AS/SA.
 - [ ] League of legends voice chat fix.
-- [ ] Fortnite voice chat fix.
-- [ ] Clean that Junk code..
-- [ ] find a better vpn solution.
+- [X] Fortnite voice chat work.
+- [X] Clean that Junk code..
 - [ ] add H1Z1 voip bypass.
 - [ ] add overwatch voip bypass.
-- [ ] fix permissions issues.
+- [X] fix permissions issues.
 - [ ] Make a Console version ps4/xb1.
 
 # Using your own/another Openvpn server.
