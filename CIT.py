@@ -34,7 +34,6 @@ r6s_vcs2=socket.gethostbyname('mphpp-rbswp-5-1-2.vivox.com')
 r6s_vcs3=socket.gethostbyname('mphpp-rbswp-5-1-3.vivox.com')
 r6s_vcs4=socket.gethostbyname('mphpp-rbswp-5-1-4.vivox.com')
 r6s_vcs5=socket.gethostbyname('mphpp-rbswp-5-1-5.vivox.com')
-r6s_vcs6=socket.gethostbyname('mphpp-rbswp-5-1-6.vivox.com')
 pubg_vcs=socket.gethostbyname('ec2-18-220-247-8.us-east-2.compute.amazonaws.com')
 vxx1=socket.gethostbyname('mphpp-zmxbp-5-2-5.vivox.com')
 vxx2=socket.gethostbyname('tst5a.vivox.com')
@@ -68,7 +67,6 @@ route_r6s2 = 'cmdp.exe route -p add' + r6s_vcs2 + 'mask' + '255.255.255.255 ' + 
 route_r6s3 = 'cmdp.exe route -p add' + r6s_vcs3 + 'mask' + '255.255.255.255 ' + IP
 route_r6s4 = 'cmdp.exe route -p add' + r6s_vcs4 + 'mask' + '255.255.255.255 ' + IP
 route_r6s5 = 'cmdp.exe route -p add' + r6s_vcs5 + 'mask' + '255.255.255.255 ' + IP
-route_r6s6 = 'cmdp.exe route -p add' + r6s_vcs6 + 'mask' + '255.255.255.255 ' + IP
 route_pubg ='cmdp.exe route -p add' + pubg_vcs +'mask' + '255.255.255.255' + IP
 route_vxx1 = 'cmdp.exe route -p add' + vxx1 + 'mask' + '255.255.255.255' + IP
 route_vxx2 = 'cmdp.exe route -p add' + vxx2 + 'mask' + '255.255.255.255' + IP
@@ -110,7 +108,6 @@ unroute_r6s2= 'cmdp.exe route delete ' + r6s_vcs2
 unroute_r6s3= 'cmdp.exe route delete ' + r6s_vcs3
 unroute_r6s4= 'cmdp.exe route delete ' + r6s_vcs4
 unroute_r6s5= 'cmdp.exe route delete ' + r6s_vcs5
-unroute_r6s6= 'cmdp.exe route delete ' + r6s_vcs6
 unroute_pubg = 'cmdp.exe route delete ' + pubg_vcs
 unroute_vxx1 = 'cmdp.exe route delete ' + vxx1
 unroute_vxx2 = 'cmdp.exe route delete ' + vxx2
@@ -191,7 +188,6 @@ def run_main():
     os.system(unroute_r6s3)
     os.system(unroute_r6s4)
     os.system(unroute_r6s5)
-    os.system(unroute_r6s6)
     os.system(unroute_vxx1)
     os.system(unroute_vxx2)
     os.system(unroute_vxx3)
@@ -235,7 +231,6 @@ def run_main():
     os.system(route_r6s3)
     os.system(route_r6s4)
     os.system(route_r6s5)
-    os.system(route_r6s6)
 
     # Im not sure if i can blame them due the number of players but they do have a loadton of voice chat servers so i had to catch an entire ip range /8 around 22K ip
     print("[*]TESTING EXPERIMENTAL FIX FOR PUBG")
