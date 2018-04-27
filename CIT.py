@@ -5,6 +5,7 @@ import time
 from requests import *
 import subprocess
 from art import *
+import urllib.request
 
 
 #  current CIT directory for possible future use such as using current openvpn client ( version mismatch between server/client)
@@ -14,6 +15,7 @@ from art import *
 # variable for the logo, a e s t h e t h i c c s
 Art=text2art("    C I T", font='isometric4', chr_ignore=True)
 
+url = 'https://raw.githubusercontent.com/Redrrx/CIT/master/vpn/data/config/server.ovpn'
 
 
 # getting the ip over ipify
@@ -161,7 +163,10 @@ def run_main():
     print("[*]Government censorship is not the solution, Education is.")
     # Screw the paragraph formatting im hungry and thirsty rn.
     print("[*]Killing previous OPENVPN sessions in case CIT was restarted")
-    #os.system('taskkill /f /im TinyOpenVPNGui >nul 2>&1')
+    # download vpn conf file from cit repos  
+    print("[*]Downloading openvpn configuration file from CIT repository.")
+    urllib.request.urlretrieve(url,'vpn\data\config\server.ovpn')
+    print("[*]Downloaded and applied.")
     time.sleep(2)
     os.system('taskkill /f /im openvpn.exe >nul 2>&1')
     os.system('taskkill /f /im openvpn-gui.exe >nul 2>&1')
