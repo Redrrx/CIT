@@ -40,7 +40,7 @@ the current version of CIT only works with Tom clancy's Rainbow six siege and Pl
 - **CLOSE ALL GAMES BEFORE STARTING CIT !**
 - **And don't forget to disable your firewall it might interfer.**
 - **Run as administrator or the routing won't be done.**
-- [DOWNLOAD](https://github.com/Redrrx/CIT/releases/download/EXP-V3/binaries-exp-v3.zip) extract and double click on CIT.exe and there you go launch your game and start yelling.
+- [DOWNLOAD](https://github.com/Redrrx/CIT/releases/download/EXP-V3.1/binaries-exp-v3.1.zip) extract and double click on CIT.exe and there you go launch your game and start yelling.
 
 
 # Known issues.
