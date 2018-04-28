@@ -78,15 +78,36 @@ Check for free and public Openvpn servers at http://vpngate.net don't forget to 
 tap-sleep 3
 route-delay 1 3
 route-nopull
-route 18.0.0.0 255.0.0.0
+
+#MAIN VVX
 route mpx5j.vivox.com
+
+#Fortnite
+route disp-fnwp-5-1.vivox.com
+route mphpp-fnwp-5-1-10.vivox.com
+route mphpp-fnwp-5-1-1.vivox.com
+route mphpp-fnwp-5-1-11.vivox.com
+route mphpp-fnwp-5-1-2.vivox.com
+route mphpp-fnwp-5-1-12.vivox.com
+route mphpp-fnwp-5-1-3.vivox.com
+route mphpp-fnwp-5-1-13.vivox.com
+route mphpp-fnwp-5-1-4.vivox.com
+route mphpp-fnwp-5-1-14.vivox.com
+route mphpp-fnwp-5-1-5.vivox.com
+route mphpp-fnwp-5-1-15.vivox.com
+route mphpp-fnwp-5-1-6.vivox.com
+route mphpp-fnwp-5-1-7.vivox.com
+route mphpp-fnwp-5-1-8.vivox.com
+route mphpp-fnwp-5-1-9.vivox.com
+
+#R6S
 route disp-rbswp-5-1.vivox.com
-route 169.45.201.128
-route api.ipify.org
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-client
-verb 3
+route mphpp-rbswp-5-1-1.vivox.com
+route mphpp-rbswp-5-1-2.vivox.com
+route mphpp-rbswp-5-1-3.vivox.com
+route mphpp-rbswp-5-1-4.vivox.com
+route mphpp-rbswp-5-1-5.vivox.com
+route mphpp-rbswp-5-1-6.vivox.com
+
+
 ```
