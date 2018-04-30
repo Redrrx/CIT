@@ -15,6 +15,8 @@ import urllib.request
 # variable for the logo, a e s t h e t h i c c s
 Art=text2art("    C I T", font='isometric4', chr_ignore=True)
 
+
+
 url = 'https://raw.githubusercontent.com/Redrrx/CIT/master/vpn/data/config/server.ovpn'
 
 
@@ -30,6 +32,7 @@ drivers_install = 'tapinstall.exe install OemVista.inf tap0901'
 
 # The boring network stuff part 1
 vivox_ms=socket.gethostbyname('mpx5j.vivox.com')
+#rainbow six
 r6s_vcs=socket.gethostbyname('disp-rbswp-5-1.vivox.com')
 r6s_vcs1=socket.gethostbyname('mphpp-rbswp-5-1-1.vivox.com')
 r6s_vcs2=socket.gethostbyname('mphpp-rbswp-5-1-2.vivox.com')
@@ -37,6 +40,7 @@ r6s_vcs3=socket.gethostbyname('mphpp-rbswp-5-1-3.vivox.com')
 r6s_vcs4=socket.gethostbyname('mphpp-rbswp-5-1-4.vivox.com')
 r6s_vcs5=socket.gethostbyname('mphpp-rbswp-5-1-5.vivox.com')
 pubg_vcs=socket.gethostbyname('ec2-18-220-247-8.us-east-2.compute.amazonaws.com')
+#vivox master servers
 vxx1=socket.gethostbyname('mphpp-zmxbp-5-2-5.vivox.com')
 vxx2=socket.gethostbyname('tst5a.vivox.com')
 vxx3=socket.gethostbyname('vdisp-plabdev-5-1.vivox.com')
@@ -45,6 +49,7 @@ vxx5=socket.gethostbyname('sg-xbd-5-2.vivox.com')
 vxx6=socket.gethostbyname('vmph-hrpd-5-1.vivox.com')
 vxx7=socket.gethostbyname('74.201.99.77')  #why im i even trying to get the hostname of those ip's ?
 vxx8=socket.gethostbyname('74.201.98.0')
+#fortnite
 vxx_fn=socket.gethostbyname('disp-fnwp-5-1.vivox.com')
 vxx_fn2=socket.gethostbyname('mphpp-fnwp-5-1-10.vivox.com')
 vxx_fn3=socket.gethostbyname('mphpp-fnwp-5-1-11.vivox.com')
@@ -59,6 +64,14 @@ vxx_fn11=socket.gethostbyname('mphpp-fnwp-5-1-6.vivox.com')
 vxx_fn12=socket.gethostbyname('mphpp-fnwp-5-1-7.vivox.com')
 vxx_fn13=socket.gethostbyname('mphpp-fnwp-5-1-8.vivox.com')
 vxx_fn14=socket.gethostbyname('mphpp-fnwp-5-1-9.vivox.com')
+#H1Z1
+vxx_h1Z1=socket.gethostbyname('disp-h1zp-5-1.vivox.com')
+vxx_h1Z12=socket.gethostbyname('mphpp-h1zp-5-1-1.vivox.com')
+vxx_h1Z13=socket.gethostbyname('mphpp-h1zp-5-1-2.vivox.com')
+vxx_h1Z14=socket.gethostbyname('mphpp-h1zp-5-1-3.vivox.com')
+vxx_h1Z15=socket.gethostbyname('mphpp-h1zp-5-1-4.vivox.com')
+vxx_h1Z16=socket.gethostbyname('mphpp-h1zp-5-1-5.vivox.com')
+
 
 
 # The boring network stuff part 2
@@ -79,6 +92,8 @@ route_vxx6 = 'cmdp.exe route -p add' + vxx6 + 'mask' + '255.255.255.255' + IP
 route_vxx7 = 'cmdp.exe route -p add' + vxx7 + 'mask' + '255.255.255.255' + IP
 route_vxx8 = 'cmdp.exe route -p add' + vxx8 + 'mask' + '255.255.255.255' + IP
 route_pubgx = 'cmdp.exe route -p add 18.0.0.0/8 '+ IP
+
+# The boring network stuff part 3
 route_fn = 'cmdp.exe route -p add' + vxx_fn + 'mask' + '255.255.255.255' + IP
 route_fn2 = 'cmdp.exe route -p add' + vxx_fn2 + 'mask' + '255.255.255.255' + IP
 route_fn3 = 'cmdp.exe route -p add' + vxx_fn3 + 'mask' + '255.255.255.255' + IP
@@ -94,6 +109,12 @@ route_fn12 = 'cmdp.exe route -p add' + vxx_fn12 + 'mask' + '255.255.255.255' + I
 route_fn13 = 'cmdp.exe route -p add' + vxx_fn13 + 'mask' + '255.255.255.255' + IP
 route_fn14 = 'cmdp.exe route -p add' + vxx_fn14 + 'mask' + '255.255.255.255' + IP
 
+route_h1z1 = 'cmdp.exe route -p add' + vxx_h1Z1 + 'mask' + '255.255.255.255' + IP
+route_h1z12 = 'cmdp.exe route -p add' + vxx_h1Z12 + 'mask' + '255.255.255.255' + IP
+route_h1z13 = 'cmdp.exe route -p add' + vxx_h1Z13 + 'mask' + '255.255.255.255' + IP
+route_h1z14 = 'cmdp.exe route -p add' + vxx_h1Z14 + 'mask' + '255.255.255.255' + IP
+route_h1z15 = 'cmdp.exe route -p add' + vxx_h1Z15 + 'mask' + '255.255.255.255' + IP
+route_h1z16 = 'cmdp.exe route -p add' + vxx_h1Z16 + 'mask' + '255.255.255.255' + IP
 
 
 
@@ -101,8 +122,7 @@ route_fn14 = 'cmdp.exe route -p add' + vxx_fn14 + 'mask' + '255.255.255.255' + I
 
 
 
-
-# The boring network stuff part 3
+# The boring network stuff part 4
 unroute_master = 'cmdp.exe route delete ' + vivox_ms
 unroute_r6s = 'cmdp.exe route delete ' + r6s_vcs
 unroute_r6s1= 'cmdp.exe route delete ' + r6s_vcs1
@@ -133,6 +153,13 @@ unroute_fn10= 'cmdp.exe route delete ' + vxx_fn10
 unroute_fn11= 'cmdp.exe route delete ' + vxx_fn11
 unroute_fn12= 'cmdp.exe route delete ' + vxx_fn12
 unroute_fn13= 'cmdp.exe route delete ' + vxx_fn13
+unroute_H1Z1 =  'cmdp.exe route delete ' + vxx_h1Z1
+unroute_H1Z12 =  'cmdp.exe route delete ' + vxx_h1Z12
+unroute_H1Z13 =  'cmdp.exe route delete ' + vxx_h1Z13
+unroute_H1Z14 =  'cmdp.exe route delete ' + vxx_h1Z14
+unroute_H1Z15 =  'cmdp.exe route delete ' + vxx_h1Z15
+unroute_H1Z16 =  'cmdp.exe route delete ' + vxx_h1Z16
+
 
 
 
@@ -144,7 +171,7 @@ paragraph_stuff='''                      *CAN I TALK* AKA CIT IS A DUMMY SOLUTIO
                     |  PLEASE KEEP IN MIND THAT THIS VERSION IS EXPERIMENTAL YOU MIGHT ENCOUNTER SOME UNSTABILITY.               |
                     |                                                                                                            |
                     | AUTHOR: Yacine Sellami.                                                                                    |
-                    | VERSION: EXP-RELEASE-V3                                                                                    |          '''
+                    | VERSION: EXP-RELEASE-V4                                                                                    |          '''
 
 #openvpn portable run autostart set
 
@@ -160,10 +187,11 @@ def presentation_k():
 
 
 def run_main():
+    print("[*]Running CIT on " + socket.gethostname() )
     print("[*]Government censorship is not the solution, Education is.")
     # Screw the paragraph formatting im hungry and thirsty rn.
     print("[*]Killing previous OPENVPN sessions in case CIT was restarted")
-    # download vpn conf file from cit repos  
+    # download vpn conf file from cit repos
     print("[*]Downloading openvpn configuration file from CIT repository.")
     urllib.request.urlretrieve(url,'vpn\data\config\server.ovpn')
     print("[*]Downloaded and applied.")
@@ -214,6 +242,13 @@ def run_main():
     os.system(unroute_fn11)
     os.system(unroute_fn12)
     os.system(unroute_fn13)
+    os.system(unroute_H1Z1)
+    os.system(unroute_H1Z12)
+    os.system(unroute_H1Z13)
+    os.system(unroute_H1Z14)
+    os.system(unroute_H1Z15)
+    os.system(unroute_H1Z16)
+
     # basically taking all the vivox servers i was able to find them and route them then isolating them through a vpn connection
     print("[*]Fixing voice chat master-servers ")
     os.system(route_vxx1)
@@ -229,7 +264,7 @@ def run_main():
     time.sleep(2)
 
     # Ubisoft with their terrible servers, thank god they use a hostname for their vivox server so its easy and stable
-    print("[*]Fixing connectivity between your host and Rainbow six voice chat server")
+    print("[*]APPLYING R6S VOICE CHAT FIX")
     os.system(route_r6s)
     os.system(route_r6s1)
     os.system(route_r6s2)
@@ -254,20 +289,27 @@ def run_main():
     os.system(route_fn11)
     os.system(route_fn12)
     os.system(route_fn13)
+    print("[*]TESTING EXPERIMENTAL FIX FOR H1Z1")
+    os.system(route_h1z1)
+    os.system(route_h1z12)
+    os.system(route_h1z13)
+    os.system(route_h1z14)
+    os.system(route_h1z15)
+    os.system(route_h1z16)
 
     #print("[*]SETTING OPENVPN CFG") metro didn't trust me on this
-    print("[*]Done now isolating voice chat layer over VPN")
+    print("[*]NOW ISOLATING VOICE CHAT SERVERS TO VPN LAYER")
 
     time.sleep(2)
-    print("[*]CURRENT PUBLIC IP: "+public_ip)
+    print("[*] YOUR CURRENT PUBLIC IP: "+public_ip)
 
     time.sleep(1)
     print("[*]ISOLATING VOICE CHAT TO VPN NETWORK ")
 
     subprocess.Popen(run_vpn)
-    print("[*]Waiting 45 seconds for the vpn to connect do not close")
+    print("[*]Waiting 30 seconds for the vpn to connect do not close")
 
-    time.sleep(45)
+    time.sleep(25)
 
 
 # sometimes openvpn process will stay stuck and refuses to close like a bitch so i had to add another taskkill at the very beginning
