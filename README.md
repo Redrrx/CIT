@@ -59,12 +59,11 @@ Go to the vpn folder and set openvpn.exe to run as administrator this should fix
 - [x] Tom clancy's rainbow six siege voice chat work.
 - [X] Tweak few stability things.
 - [X] PUBG voice chat work EU/AS/SA.
-- [ ] League of legends voice chat fix.
-- [X] Fortnite voice chat work.
 - [X] Clean that Junk code..
-- [ ] add H1Z1 voip bypass.
-- [ ] add overwatch voip bypass.
+- [X] add H1Z1 voip bypass.
+- [X] Fortnite voice chat work.
 - [X] fix permissions issues.
+- [ ] League of legends voice chat fix.
 - [ ] Make a Console version ps4/xb1.
 
 # Using your own/another Openvpn server.
