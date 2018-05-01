@@ -35,6 +35,7 @@ the current version of CIT only works with Tom clancy's Rainbow six siege and Pl
 
 - Fornite voice chat works perfectly due all the voice chat servers being included in CIT now.
 
+- H1Z1 voice chat is still on alpha will work on it more in the future.
 
 # Download and usage.
 - **CLOSE ALL GAMES BEFORE STARTING CIT !**
