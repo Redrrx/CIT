@@ -75,12 +75,18 @@ not to forget that your openvpn server needs to accept routing configurations an
 Check for free and public Openvpn servers at http://vpngate.net don't forget to look for france and germany only.
 
 ```
+cipher none
+comp-lzo no
+keepalive 900 1800
 tap-sleep 3
 route-delay 1 3
 route-nopull
 
 #MAIN VVX
 route mpx5j.vivox.com
+
+#PUBG
+route 18.0.0.0 255.0.0.0
 
 #Fortnite
 route disp-fnwp-5-1.vivox.com
@@ -109,5 +115,13 @@ route mphpp-rbswp-5-1-4.vivox.com
 route mphpp-rbswp-5-1-5.vivox.com
 route mphpp-rbswp-5-1-6.vivox.com
 
+#H1Z1
+route disp-h1zp-5-1.vivox.com
+route disp-h1zp-f5.vivox.com
+route mphpp-h1zp-5-1-1.vivox.com
+route mphpp-h1zp-5-1-2.vivox.com
+route mphpp-h1zp-5-1-3.vivox.com
+route mphpp-h1zp-5-1-4.vivox.com
+route mphpp-h1zp-5-1-5.vivox.com
 
 ```
