@@ -51,7 +51,8 @@ check your permissions, CIT requires full admin privileges.
 this is related to your connectivity to the VPN i can't help with that.
 - **"the voice lags"**
 well the voice chat bitrate is less than 64kb this is your net or the vpn nothing with the software. 
-
+- **CIT Crashing**
+its not crashing, after the signal method has a timeout it is likely to close quick could be due network or vpn issues, run CIT.bat  (V4+ ONLY) and post an issue with the error message.
 # Quick fix for VPN not launching 
 Go to the vpn folder and set openvpn.exe to run as administrator this should fix it, a workaround for the current permissions issues to be fixed later.
 
