@@ -18,7 +18,7 @@ fn_vcs=socket.gethostbyname('disp-fnwp-5-1.vivox.com')
 
 #vpn disconnects due inactivity this is a temporary workaround will change in future version
 def signal():
-    response = requests.get('https://api.ipify.org')
+    response = requests.get('https://api.ipify.org', timeout=180)
     soup = BeautifulSoup(response.text, 'html.parser')
     print('Sending signal to vpn server every 60 seconds, current ip is: ' + soup.prettify() + "Response code: "+ str(response.status_code) + " " + time.ctime())
     time.sleep(60)
