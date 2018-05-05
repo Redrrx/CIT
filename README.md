@@ -56,7 +56,7 @@ its not crashing, after the signal method has a timeout it is likely to close qu
 # Quick fix for VPN not launching 
 Go to the vpn folder and set openvpn.exe to run as administrator this should fix it, a workaround for the current permissions issues to be fixed later.
 # Discord server.
-Join the discord server for support and updates [here](https://discord.gg/XaTRgss)
+Join the discord server for support and updates [here](https://discord.gg/W4Q3BSG)
 # The To-Do list.
 
 - [x] Tom clancy's rainbow six siege voice chat work.
