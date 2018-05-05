@@ -67,7 +67,7 @@ Join the discord server for support and updates [here](https://discord.gg/XaTRgs
 - [X] Fortnite voice chat work.
 - [X] fix permissions issues.
 - [ ] League of legends voice chat fix.
-- [ ] Make a Console version ps4/xb1.
+- [X] Make a Console version ps4/xb1. 
 
 # Using your own/another Openvpn server.
 head over to /vpn/data/config/ you will find server.ovpn feel free to replace it but don't forget to add those additional configurations otherwise you won't isolate the voice chat servers to the vpn connection. 
