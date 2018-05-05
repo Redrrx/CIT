@@ -55,7 +55,8 @@ well the voice chat bitrate is less than 64kb this is your net or the vpn nothin
 its not crashing, after the signal method has a timeout it is likely to close quick could be due network or vpn issues, run CIT.bat  (V4+ ONLY) and post an issue with the error message.
 # Quick fix for VPN not launching 
 Go to the vpn folder and set openvpn.exe to run as administrator this should fix it, a workaround for the current permissions issues to be fixed later.
-
+# Discord server.
+Join the discord server for support and updates [here](https://discord.gg/XaTRgss)
 # The To-Do list.
 
 - [x] Tom clancy's rainbow six siege voice chat work.
