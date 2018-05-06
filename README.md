@@ -4,12 +4,12 @@ CIT for "Can I Talk"is a dummy solution to bypass video games voip restrictions,
 
 This software is targeted for a specific audience which is any resident from the following countries:
 
-- Algeria 
-- Tunisia 
-- Saudi Arabia 
-- Egypt 
-- United Arab Emirates 
-- Bengladesh 
+- Algeria. 
+- Tunisia. 
+- Saudi Arabia. 
+- Egypt. 
+- United Arab Emirates. 
+- Bengladesh. 
 
 that's alot of silenced players, fixed that for your boys.
 
