@@ -45,6 +45,8 @@ the current version of CIT only works with Tom clancy's Rainbow six siege and Pl
 
 
 # Known issues.
+- **"Vpn connected but no voice chat in-game"** Please set your dns to google's dns follow this tutorial by how-to-geek [here](https://www.howtogeek.com/164981/how-to-switch-to-opendns-or-google-dns-to-speed-up-web-browsing/)
+
 - **"Nothing works its bullshit"**
 check your permissions, CIT requires full admin privileges.
 - **"the voice chat suddenly stops working"**
