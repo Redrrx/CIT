@@ -39,6 +39,35 @@ r6s_vcs2=socket.gethostbyname('mphpp-rbswp-5-1-2.vivox.com')
 r6s_vcs3=socket.gethostbyname('mphpp-rbswp-5-1-3.vivox.com')
 r6s_vcs4=socket.gethostbyname('mphpp-rbswp-5-1-4.vivox.com')
 r6s_vcs5=socket.gethostbyname('mphpp-rbswp-5-1-5.vivox.com')
+#rainbow six ps4
+r6s_vcsp=socket.gethostbyname('disp-rbspsp-5-1.vivox.com')
+r6s_vcsp1=socket.gethostbyname('mphpp-rbspsp-5-1-10.vivox.com')
+r6s_vcsp2=socket.gethostbyname('mphpp-rbspsp-5-1-1.vivox.com')
+r6s_vcsp3=socket.gethostbyname('mphpp-rbspsp-5-1-11.vivox.com')
+r6s_vcsp4=socket.gethostbyname('mphpp-rbspsp-5-1-2.vivox.com')
+r6s_vcsp5=socket.gethostbyname('mphpp-rbspsp-5-1-12.vivox.com')
+r6s_vcsp6=socket.gethostbyname('mphpp-rbspsp-5-1-3.vivox.com')
+r6s_vcsp7=socket.gethostbyname('mphpp-rbspsp-5-1-13.vivox.com')
+r6s_vcsp8=socket.gethostbyname('mphpp-rbspsp-5-1-4.vivox.com')
+r6s_vcsp9=socket.gethostbyname('mphpp-rbspsp-5-1-14.vivox.com')
+r6s_vcsp10=socket.gethostbyname('mphpp-rbspsp-5-1-5.vivox.com')
+r6s_vcsp11=socket.gethostbyname('mphpp-rbspsp-5-1-15.vivox.com')
+r6s_vcsp12=socket.gethostbyname('mphpp-rbspsp-5-1-6.vivox.com')
+r6s_vcsp13=socket.gethostbyname('mphpp-rbspsp-5-1-16.vivox.com')
+r6s_vcsp14=socket.gethostbyname('mphpp-rbspsp-5-1-7.vivox.com')
+r6s_vcsp15=socket.gethostbyname('mphpp-rbspsp-5-1-8.vivox.com')
+r6s_vcsp16=socket.gethostbyname('mphpp-rbspsp-5-1-9.vivox.com')
+#rainbow six xbox one
+r6s_vcsxb=socket.gethostbyname('disp-rbsxbp-5-1.vivox.com')
+r6s_vcsxb1=socket.gethostbyname('mphpp-rbsxbp-5-1-2.vivox.com')
+r6s_vcsxb2=socket.gethostbyname('mphpp-rbsxbp-5-1-3.vivox.com')
+r6s_vcsxb3=socket.gethostbyname('mphpp-rbsxbp-5-1-4.vivox.com')
+r6s_vcsxb4=socket.gethostbyname('mphpp-rbsxbp-5-1-5.vivox.com')
+r6s_vcsxb5=socket.gethostbyname('mphpp-rbsxbp-5-1-6.vivox.com')
+r6s_vcsxb6=socket.gethostbyname('mphpp-rbsxbp-5-1-7.vivox.com')
+r6s_vcsxb7=socket.gethostbyname('mphpp-rbsxbp-5-1-8.vivox.com')
+
+
 pubg_vcs=socket.gethostbyname('ec2-18-220-247-8.us-east-2.compute.amazonaws.com')
 #vivox master servers
 vxx1=socket.gethostbyname('mphpp-zmxbp-5-2-5.vivox.com')
@@ -64,6 +93,7 @@ vxx_fn11=socket.gethostbyname('mphpp-fnwp-5-1-6.vivox.com')
 vxx_fn12=socket.gethostbyname('mphpp-fnwp-5-1-7.vivox.com')
 vxx_fn13=socket.gethostbyname('mphpp-fnwp-5-1-8.vivox.com')
 vxx_fn14=socket.gethostbyname('mphpp-fnwp-5-1-9.vivox.com')
+
 #H1Z1
 vxx_h1Z1=socket.gethostbyname('disp-h1zp-5-1.vivox.com')
 vxx_h1Z12=socket.gethostbyname('mphpp-h1zp-5-1-1.vivox.com')
@@ -92,6 +122,54 @@ route_vxx6 = 'cmdp.exe route -p add' + vxx6 + 'mask' + '255.255.255.255' + IP
 route_vxx7 = 'cmdp.exe route -p add' + vxx7 + 'mask' + '255.255.255.255' + IP
 route_vxx8 = 'cmdp.exe route -p add' + vxx8 + 'mask' + '255.255.255.255' + IP
 route_pubgx = 'cmdp.exe route -p add 18.0.0.0/8 '+ IP
+
+#routing R6S PS4 voice chat
+route_r6s_vcsp = 'cmdp.exe route -p add' + r6s_vcsp + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp1 = 'cmdp.exe route -p add' + r6s_vcsp1 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp2 = 'cmdp.exe route -p add' + r6s_vcsp2 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp3 = 'cmdp.exe route -p add' + r6s_vcsp3 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp4 = 'cmdp.exe route -p add' + r6s_vcsp4 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp5 = 'cmdp.exe route -p add' + r6s_vcsp5 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp6 = 'cmdp.exe route -p add' + r6s_vcsp6 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp7 = 'cmdp.exe route -p add' + r6s_vcsp7 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp8 = 'cmdp.exe route -p add' + r6s_vcsp8 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp9 = 'cmdp.exe route -p add' + r6s_vcsp9 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp10 = 'cmdp.exe route -p add' + r6s_vcsp10 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp11 = 'cmdp.exe route -p add' + r6s_vcsp11 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp12 = 'cmdp.exe route -p add' + r6s_vcsp12 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp13 = 'cmdp.exe route -p add' + r6s_vcsp13 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp14 = 'cmdp.exe route -p add' + r6s_vcsp14 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp15 = 'cmdp.exe route -p add' + r6s_vcsp15 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcsp16 = 'cmdp.exe route -p add' + r6s_vcsp16 + 'mask' + '255.255.255.255' + IP
+
+# the xbox part, why im i even doing this ffs..
+
+
+route_r6s_vcxb = 'cmdp.exe route -p add' + r6s_vcsxb + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb1 = 'cmdp.exe route -p add' + r6s_vcsxb1 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb2 = 'cmdp.exe route -p add' + r6s_vcsxb2 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb3 = 'cmdp.exe route -p add' + r6s_vcsxb3 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb4 = 'cmdp.exe route -p add' + r6s_vcsxb4 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb5 = 'cmdp.exe route -p add' + r6s_vcsxb5 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb6 = 'cmdp.exe route -p add' + r6s_vcsxb6 + 'mask' + '255.255.255.255' + IP
+route_r6s_vcxb7 = 'cmdp.exe route -p add' + r6s_vcsxb7 + 'mask' + '255.255.255.255' + IP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # The boring network stuff part 3
 route_fn = 'cmdp.exe route -p add' + vxx_fn + 'mask' + '255.255.255.255' + IP
@@ -123,6 +201,7 @@ route_h1z16 = 'cmdp.exe route -p add' + vxx_h1Z16 + 'mask' + '255.255.255.255' +
 
 
 # The boring network stuff part 4
+# will add new unroute for other servers soon
 unroute_master = 'cmdp.exe route delete ' + vivox_ms
 unroute_r6s = 'cmdp.exe route delete ' + r6s_vcs
 unroute_r6s1= 'cmdp.exe route delete ' + r6s_vcs1
@@ -171,7 +250,7 @@ paragraph_stuff='''                      *CAN I TALK* AKA CIT IS A DUMMY SOLUTIO
                     |  PLEASE KEEP IN MIND THAT THIS VERSION IS EXPERIMENTAL YOU MIGHT ENCOUNTER SOME UNSTABILITY.               |
                     |                                                                                                            |
                     | AUTHOR: Yacine Sellami.                                                                                    |
-                    | VERSION: EXP-RELEASE-V4                                                                                    |          '''
+                    | VERSION: RC-1.0                                                                                    |          '''
 
 #openvpn portable run autostart set
 
@@ -187,6 +266,9 @@ def presentation_k():
 
 
 def run_main():
+    os.system('taskkill /f /im openvpn.exe >nul 2>&1')
+    os.system('taskkill /f /im openvpn-gui.exe >nul 2>&1')
+    os.system('taskkill /f /im TinyOpenVPNGui >nul 2>&1')
     print("[*]Running CIT on " + socket.gethostname() )
     print("[*]Government censorship is not the solution, Education is.")
     # Screw the paragraph formatting im hungry and thirsty rn.
@@ -196,9 +278,7 @@ def run_main():
     urllib.request.urlretrieve(url,'vpn\data\config\server.ovpn')
     print("[*]Downloaded and applied.")
     time.sleep(2)
-    os.system('taskkill /f /im openvpn.exe >nul 2>&1')
-    os.system('taskkill /f /im openvpn-gui.exe >nul 2>&1')
-    os.system('taskkill /f /im TinyOpenVPNGui >nul 2>&1')
+
 
     # show the local ip for no reason honestly i did this to check if its using the TAP driver ip
     print("[*]Your current local IP is :" +IP)
@@ -271,7 +351,32 @@ def run_main():
     os.system(route_r6s3)
     os.system(route_r6s4)
     os.system(route_r6s5)
-
+    print("[*]TESTING EXPERIMENTAL FIX FOR R6S PS4")
+    os.system(route_r6s_vcsp)
+    os.system(route_r6s_vcsp1)
+    os.system(route_r6s_vcsp2)
+    os.system(route_r6s_vcsp3)
+    os.system(route_r6s_vcsp4)
+    os.system(route_r6s_vcsp5)
+    os.system(route_r6s_vcsp6)
+    os.system(route_r6s_vcsp7)
+    os.system(route_r6s_vcsp8)
+    os.system(route_r6s_vcsp10)
+    os.system(route_r6s_vcsp11)
+    os.system(route_r6s_vcsp12)
+    os.system(route_r6s_vcsp13)
+    os.system(route_r6s_vcsp14)
+    os.system(route_r6s_vcsp15)
+    os.system(route_r6s_vcsp16)
+    print("[*]TESTING EXPERIMENTAL FIX FOR R6S XB1")
+    os.system(route_r6s_vcxb)
+    os.system(route_r6s_vcxb1)
+    os.system(route_r6s_vcxb2)
+    os.system(route_r6s_vcxb3)
+    os.system(route_r6s_vcxb4)
+    os.system(route_r6s_vcxb5)
+    os.system(route_r6s_vcxb6)
+    os.system(route_r6s_vcxb7)
     # Im not sure if i can blame them due the number of players but they do have a loadton of voice chat servers so i had to catch an entire ip range /8 around 22K ip
     print("[*]TESTING EXPERIMENTAL FIX FOR PUBG")
     os.system(route_pubgx)
@@ -301,7 +406,7 @@ def run_main():
     print("[*]NOW ISOLATING VOICE CHAT SERVERS TO VPN LAYER")
 
     time.sleep(2)
-    print("[*] YOUR CURRENT PUBLIC IP: "+public_ip)
+    print("[*]YOUR CURRENT PUBLIC IP: "+public_ip)
 
     time.sleep(1)
     print("[*]ISOLATING VOICE CHAT TO VPN NETWORK ")
