@@ -231,13 +231,11 @@ paragraph_stuff='''                      *CAN I TALK* AKA CIT IS A DUMMY SOLUTIO
 
 run_vpn='vpn\openvpn.exe'
 
-
 def presentation_k():
                      print()
                      print(Art)
                      print()
                      print(paragraph_stuff)
-
 
 def run_main():
     print("[*]Killing previous OPENVPN sessions in case CIT was restarted.")
@@ -284,6 +282,10 @@ def run_main():
     os.system('netsh interface ip add dns name="Wireless Network Connection" addr=8.8.8.8 index=1')
     os.system('netsh interface ip add dns name="Wireless Network Connection" addr=8.8.4.4 index=2')
 
+    os.system('netsh interface ip set dns name="Wi-Fi" source=static addr=none')
+    os.system('netsh interface ip add dns name="Wi-Fi" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Wi-Fi" addr=8.8.4.4 index=2')
+    
     print("[*]Doing network stuff.")
     os.system('ipconfig /flushdns >nul 2>&1')
     os.system('ipconfig /registerdns >nul 2>&1')
