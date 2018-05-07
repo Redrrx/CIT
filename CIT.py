@@ -154,23 +154,6 @@ route_r6s_vcxb5 = 'cmdp.exe route -p add' + r6s_vcsxb5 + 'mask' + '255.255.255.2
 route_r6s_vcxb6 = 'cmdp.exe route -p add' + r6s_vcsxb6 + 'mask' + '255.255.255.255' + IP
 route_r6s_vcxb7 = 'cmdp.exe route -p add' + r6s_vcsxb7 + 'mask' + '255.255.255.255' + IP
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # The boring network stuff part 3
 route_fn = 'cmdp.exe route -p add' + vxx_fn + 'mask' + '255.255.255.255' + IP
 route_fn2 = 'cmdp.exe route -p add' + vxx_fn2 + 'mask' + '255.255.255.255' + IP
@@ -193,12 +176,6 @@ route_h1z13 = 'cmdp.exe route -p add' + vxx_h1Z13 + 'mask' + '255.255.255.255' +
 route_h1z14 = 'cmdp.exe route -p add' + vxx_h1Z14 + 'mask' + '255.255.255.255' + IP
 route_h1z15 = 'cmdp.exe route -p add' + vxx_h1Z15 + 'mask' + '255.255.255.255' + IP
 route_h1z16 = 'cmdp.exe route -p add' + vxx_h1Z16 + 'mask' + '255.255.255.255' + IP
-
-
-
-
-
-
 
 # The boring network stuff part 4
 # will add new unroute for other servers soon
@@ -240,8 +217,6 @@ unroute_H1Z15 =  'cmdp.exe route delete ' + vxx_h1Z15
 unroute_H1Z16 =  'cmdp.exe route delete ' + vxx_h1Z16
 
 
-
-
 paragraph_stuff='''                      *CAN I TALK* AKA CIT IS A DUMMY SOLUTION TO BYPASS VIDEO GAMES VOIP RESTRICTIONS.       
                     |  BY ISOLATING THE VOICE CHAT RELAY TO A VPN CONNECTION WITHOUT AFFECTING IN-GAME PERFORMANCE AND LATENCY   |
                     |  KEEP IN MIND THE RESULT WILL VARY FROM MACHINE TO MACHINE DUE NUMEROUS FACTORS SUCH AS NETWORK STABILITY  |
@@ -264,34 +239,56 @@ def presentation_k():
                      print(paragraph_stuff)
 
 
-
 def run_main():
+    print("[*]Killing previous OPENVPN sessions in case CIT was restarted.")
     os.system('taskkill /f /im openvpn.exe >nul 2>&1')
     os.system('taskkill /f /im openvpn-gui.exe >nul 2>&1')
     os.system('taskkill /f /im TinyOpenVPNGui >nul 2>&1')
     print("[*]Running CIT on " + socket.gethostname() )
-    print("[*]Government censorship is not the solution, Education is.")
-    # Screw the paragraph formatting im hungry and thirsty rn.
-    print("[*]Killing previous OPENVPN sessions in case CIT was restarted")
+    print("[*]The first condition of progress is the removal of censorship.")
     # download vpn conf file from cit repos
     print("[*]Downloading openvpn configuration file from CIT repository.")
     urllib.request.urlretrieve(url,'vpn\data\config\server.ovpn')
     print("[*]Downloaded and applied.")
     time.sleep(2)
-
-
     # show the local ip for no reason honestly i did this to check if its using the TAP driver ip
     print("[*]Your current local IP is :" +IP)
-
     # Uninstalling TAP drivers and reinstalling them because that shit is broken and a pain in the ass to handle externally
-    print("[*]Refreshing TAP drivers")
+    print("[*]Refreshing TAP drivers.")
     os.system(drivers_cleanup)
     time.sleep(2)
     os.system(drivers_install)
-    print("[*]Doing network stuff")
+    print("[*]Setting up DNS servers.")
+    # Alright i don't have the universal name of the network interfaces so i had to improvise..
+    os.system('netsh interface ip set dns name="Ethernet 2" source=static addr=none')
+    os.system('netsh interface ip add dns name="Ethernet 2" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Ethernet 2" addr=8.8.4.4 index=2')
+
+    os.system('netsh interface ip set dns name="Ethernet 1" source=static addr=none')
+    os.system('netsh interface ip add dns name="Ethernet 1" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Ethernet 1" addr=8.8.4.4 index=2')
+
+    os.system('netsh interface ip set dns name="Ethernet" source=static addr=none')
+    os.system('netsh interface ip add dns name="Ethernet" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Ethernet" addr=8.8.4.4 index=2')
+
+    os.system('netsh interface ip set dns name="Wi-Fi" source=static addr=none')
+    os.system('netsh interface ip add dns name="Wi-Fi" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Wi-Fi" addr=8.8.4.4 index=2')
+
+    os.system('netsh interface ip set dns name="Local Area Connection" source=static addr=none')
+    os.system('netsh interface ip add dns name="Local Area Connection" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Local Area Connection" addr=8.8.4.4 index=2')
+
+    os.system('netsh interface ip set dns name="Wireless Network Connection" source=static addr=none')
+    os.system('netsh interface ip add dns name="Wireless Network Connection" addr=8.8.8.8 index=1')
+    os.system('netsh interface ip add dns name="Wireless Network Connection" addr=8.8.4.4 index=2')
+
+    print("[*]Doing network stuff.")
     os.system('ipconfig /flushdns >nul 2>&1')
     os.system('ipconfig /registerdns >nul 2>&1')
-    print("[*]Removing previous routes")
+
+    print("[*]Removing previous routes.")
     os.system(unroute_master)
     os.system(unroute_pubg)
     os.system(unroute_pubgx)
@@ -328,7 +325,6 @@ def run_main():
     os.system(unroute_H1Z14)
     os.system(unroute_H1Z15)
     os.system(unroute_H1Z16)
-
     # basically taking all the vivox servers i was able to find them and route them then isolating them through a vpn connection
     print("[*]Fixing voice chat master-servers ")
     os.system(route_vxx1)
@@ -340,9 +336,7 @@ def run_main():
     os.system(route_vxx7)
     os.system(route_vxx8)
     os.system(route_master)
-
     time.sleep(2)
-
     # Ubisoft with their terrible servers, thank god they use a hostname for their vivox server so its easy and stable
     print("[*]APPLYING R6S VOICE CHAT FIX")
     os.system(route_r6s)
@@ -401,22 +395,14 @@ def run_main():
     os.system(route_h1z14)
     os.system(route_h1z15)
     os.system(route_h1z16)
-
-    #print("[*]SETTING OPENVPN CFG") metro didn't trust me on this
     print("[*]NOW ISOLATING VOICE CHAT SERVERS TO VPN LAYER")
-
-    time.sleep(2)
+    time.sleep(0)
     print("[*]YOUR CURRENT PUBLIC IP: "+public_ip)
-
     time.sleep(1)
     print("[*]ISOLATING VOICE CHAT TO VPN NETWORK ")
-
     subprocess.Popen(run_vpn)
     print("[*]Waiting 30 seconds for the vpn to connect do not close")
-
     time.sleep(25)
-
-
 # sometimes openvpn process will stay stuck and refuses to close like a bitch so i had to add another taskkill at the very beginning
 os.system('mode con: cols=150 lines=40') # resizing the console window so it won't look like shit with my terrific text formatting skills
 presentation_k() # Running that ASCII art diplaying the software name like a Logo
