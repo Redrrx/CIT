@@ -28,7 +28,7 @@ that's alot of silenced players, fixed that for your boys.
 
 
 # Regarding the current version.
-the current version of CIT only works with Tom clancy's Rainbow six siege and PlayerUnknown Battlegrounds.
+the current version of CIT only works with Tom clancy's Rainbow six siege, PlayerUnknown Battlegrounds, and Fortnite.
 - Rainbow six has a stable connection to the voice chat servers depends on the time up of the vpn you're connected to, i'll talk about that below regarding using your own vpn
 
 - PlayerUknown Battlegrounds voice chat works Only in EU/AS/SA servers using a France or German IP  it disconnects sometimes for some reasons i beleive its on their side.
