@@ -64,13 +64,14 @@ Join the discord server for support and updates [here](https://discord.gg/W4Q3BS
 - [x] Tom clancy's rainbow six siege voice chat work.
 - [X] Tweak few stability things.
 - [X] PUBG voice chat work EU/AS/SA.
-- [X] Clean that Junk code..
-- [X] add H1Z1 voip bypass.
-- [X] Fortnite voice chat work.
-- [X] fix permissions issues.
-- [ ] League of legends voice chat fix.
+- [ ] Clean that Junk code..
+- [X] FIX H1Z1 VOICE CHAT.
+- [X] FIX FORTNITE VOICE CHAT.
+- [ ] FIX LEAGUE OF LEGENDS VOICE CHAT.
+- [X] FIX PERMISSIONS ISSUES.
+- [ ] FIX PALADINS VOICE CHAT.
 - [X] Make a Console version ps4/xb1. 
-
+- [ ] make a better logging method.
 # Using your own/another Openvpn server.
 head over to /vpn/data/config/ you will find server.ovpn feel free to replace it but don't forget to add those additional configurations otherwise you won't isolate the voice chat servers to the vpn connection. 
 
